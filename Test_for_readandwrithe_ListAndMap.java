@@ -17,24 +17,20 @@ public class Test_for_readandwrithe_ListAndMap {
 
                 HashMap<String,String> map = new HashMap <String,String>();
 
-                map.put("name", "foolfish");
+                map.put("name", "value");
 
 
 
                 List<String> list = new ArrayList <String>();
 
-                list.add("hello");
+                list.add("I");
 
-                list.add("everyone");
-
-
+                list.add("me");
 
 
-
-                FileOutputStream outStream = new FileOutputStream("D://1.txt");
+                FileOutputStream outStream = new FileOutputStream("D://try.txt");
 
                 ObjectOutputStream objectOutputStream = new ObjectOutputStream(outStream);
-
 
 
                 objectOutputStream.writeObject(map);
@@ -65,7 +61,7 @@ public class Test_for_readandwrithe_ListAndMap {
 
             try {
 
-                freader = new FileInputStream("D://1.txt");
+                freader = new FileInputStream("D://try.txt");
 
                 ObjectInputStream objectInputStream = new ObjectInputStream(freader);
 
@@ -104,8 +100,6 @@ public class Test_for_readandwrithe_ListAndMap {
 
 
         }
-
-
 
 
         public static void main(String args[]){
