@@ -18,7 +18,7 @@ public class Test_for_readandwrithe_Arraylist_onebyone {
         if (folderName.exists()) {
             System.out.println("The folder XMLtoDocument has existed");
         } else {
-            folderName.mkdir(); // Create folder 创建文件夹/home/.../XMLtoDocument
+            folderName.mkdir(); // Create folder /home/.../XMLtoDocument
         }
 
         //**************************************Create File************************************************
@@ -30,7 +30,7 @@ public class Test_for_readandwrithe_Arraylist_onebyone {
             System.out.println("The file has existed");
         } else {
             try {
-                write_file.createNewFile();     // Create file, this is different form creating folder文件的创建，注意与文件夹创建的区别
+                write_file.createNewFile();     // Create file, this is different form creating folder
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -58,7 +58,7 @@ public class Test_for_readandwrithe_Arraylist_onebyone {
                 fileWriter.write(term);
             }
 
-            fileWriter.close(); // 关闭数据流
+            fileWriter.close(); // Close data stream
 
         } catch (IOException e) {
             e.printStackTrace();
